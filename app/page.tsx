@@ -2,46 +2,32 @@
 
 export default function Home() {
   return (
-    <main className="">
-      <div className="container min-w-full fixed">
-        <div className="container flex justify-between bg-white min-w-full">
-          <div className="bg-red-400 px-80 max-w-[70%] ml-12">
-            <h1 className="text-black font-mono">
-              Hello Contact here 012-345-6789
-            </h1>
-          </div>
-          <div className="bg-red-400 px-80 max-w-[70%] mr-24">
-            <h1 className="text-black font-mono">About us | Join us</h1>
-          </div>
+    <main className="flex min-h-screen justify-center">
+      <div className="container fixed items">
+        <div className="container flex bg-red-400 justify-between">
+          <div>Contact us 012-345-6789</div>
+          <div>About us | Join us</div>
         </div>
-
-        <div className="container flex min-w-full bg-slate-800">
-          <div className="bg-black gap-2 p-10">
-            <h1 className="">Advice picture</h1>
-          </div>
-          <div className="container bg-red-400 flex flex-col min-w-full">
-            <div className="container bg-red-700 flex gap-2 p-5 min-w-full">
-              <div>Search Bar</div>
-              <div>Compare product</div>
-              <div>Favorite</div>
-              <div>Cart</div>
-              <div>Sign In</div>
+        <div className="container flex bg-slate-400">
+          <div className="m-4">Advice logo</div>
+          <div className="flex flex-col w-full">
+            <div className="flex gap-4">
+              <div className="p-4">Search Bar</div>
+              <div className="p-4">Cart</div>
+              <div className="p-4">My Account</div>
             </div>
-            <div className="container bg-slate-500 flex gap-2 p-5 min-w-full">
+            <div className="flex gap-4">
+              <div>First Page</div>
               <div>Product</div>
-              <div>Shopping</div>
-              <div>Dealer</div>
-              <div>Customer of Advice</div>
-              <div>Branches near you</div>
-              <div>Supplier</div>
-              <div>Service</div>
-              <div>Franchise</div>
-              <div>Investor</div>
-              <div>IMG this price are vat included</div>
+              <div>Article</div>
+              <div>How to pay ?</div>
+              <div>Confirm payment</div>
+              <div>Services</div>
             </div>
           </div>
         </div>
       </div>
+
       {/* flex flex-col min-h-screen gap-2 p-10 max-w-xs */}
       {/* <div>
           <h2>HOLA</h2>
