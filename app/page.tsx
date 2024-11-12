@@ -1,6 +1,6 @@
 // import Image from "next/image";
-import React from 'react';
-import ScrollableMenu from '../components/scroll-menu';
+import React from "react";
+import ScrollableMenu from "../components/scroll-menu";
 
 export default function Home() {
   return (
@@ -33,27 +33,21 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container flex bg-slate-700 pt-20">
-        <div className="bg-red-400"><ScrollableMenu /></div>
-        <div className="bg-yellow-800">Product Picture</div>
+      <div className="container bg-slate-700 pt-20">
+        <div className="bg-red-400 flex flex-row max-h-[450px]">
+          <ScrollableMenu />
+          <div className="flex-auto">Hello</div>
+        </div>
+
+        <div className="flex bg-teal-400">
+          <div className="text-black bg-white mx-auto">Promotion</div>
+          <div className="bg-black px-4">See All </div>
+        </div>
       </div>
 
       <div className="container fixed bottom-0 w-full bg-gray-300 p-4">
         <div className="text-center text-black">Footer Content Here</div>
       </div>
-
-      {/* flex flex-col min-h-screen gap-2 p-10 max-w-xs */}
-      {/* <div>
-          <h2>HOLA</h2>
-        </div>
-        <div>Amigo</div>
-        <div>Que pasa</div>
-        <div>Que pasa</div>
-        <div>Que pasa</div>
-        <div>Que pasa</div>
-        <div>Que pasa</div>
-        <div>Que pasa</div>
-        <div>Que pasa</div> */}
     </main>
   );
 }
