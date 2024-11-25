@@ -39,9 +39,97 @@ export default function Home() {
           <div className="flex-auto">Hello</div>
         </div>
 
-        <div className="flex bg-teal-400">
-          <div className="text-black bg-white mx-auto">Promotion</div>
-          <div className="bg-black px-4">See All </div>
+        <div>
+          <div className="flex bg-teal-400">
+            <div className="text-black bg-white mx-auto">Promotion</div>
+            <div className="bg-black px-4">See All </div>
+          </div>
+
+          <div>Promotion product x4</div>
+        </div>
+
+        <div>
+          <div className="flex bg-teal-400">
+            <div className="text-black bg-white mx-auto">Recommended</div>
+            <div className="bg-black px-4">See All </div>
+          </div>
+
+          <div>Promotion product x9</div>
+        </div>
+
+        <div>
+          <div className="flex bg-teal-400">
+            <div className="text-black bg-white mx-auto">Best Seller</div>
+            <div className="bg-black px-4">See All </div>
+          </div>
+
+          <div>Promotion product x9</div>
+        </div>
+
+        <div>
+          <div>Product slide</div>
+          <div>See All Brand</div>
+        </div>
+
+        <div>
+          <div>Payment method</div>
+        </div>
+
+        <div className="flex gap-4">
+          <div className="flex flex-col">
+            products
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+          </div>
+          <div className="flex flex-col">
+            help
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+          </div>
+          <div className="flex flex-col">
+            about us
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+          </div>
+          <div className="flex flex-col">
+            contact us
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <div className="flex flex-col">
+            member
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </div>
+
+        <div className="flex gap-4">
+          <div className="flex flex-col">
+            Company info
+            <div>1</div>
+          </div>
+          <div className="flex flex-row">
+            Social media icon
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
         </div>
       </div>
 
