@@ -1,29 +1,47 @@
-// import Image from "next/image";
+"use client";
+import Image from "next/image";
 import React from "react";
 import ScrollableMenu from "../components/scroll-menu";
+import SearchBar from "@/components/search-bar";
+import ShoppingCart from "@/components/shopping-cart";
+import UserIcon from "@/components/user-icon";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen justify-center">
       <div className="container fixed h-[80px]">
-        {/* <div className="container flex bg-red-400 justify-between">
-          <div>Contact us 012-345-6789</div>
-          <div>About us | Join us</div>
-        </div> */}
-        <div className="container flex bg-slate-400">
-          {/* <div className="m-4">Advice logo</div> */}
+        <div className="container bg-black">
           <div className="flex flex-col w-full">
-            <div className="flex gap-4">
-              <div className="m-4">Advice logo</div>
-              <div className="p-4">Search Bar</div>
-              <div className="p-4">Shopping Cart</div>
-              <div className="p-4">My Account</div>
+            <div className="grid grid-cols-4 gap-4">
+              <Image
+                src="/images/gump.png" // Corrected the path
+                height={200}
+                width={180}
+                alt="Gump Logo" // Update with a meaningful alt text
+                className="m-4" // TailwindCSS class for margin
+              />
+              <div className="p-4 m-4">
+                <SearchBar />
+              </div>
+              <div className="p-4 m-4 flex gap-4">
+                <div className="">
+                  <ShoppingCart />
+                </div>
+                <div className="p-2">Shopping cart</div>
+              </div>
+              <div className="p-4 m-4 flex gap-4">
+                <div className="">
+                  <UserIcon />
+                </div>
+                <div className="p-2">My Account</div>
+              </div>
             </div>
-            <div className="flex gap-4">
+
+            <div className="grid grid-cols-8 gap-4 text-center">
               <div>First Page</div>
               <div>Product</div>
               <div>Article</div>
-              <div>How to pay ?</div>
+              <div>Pay Method</div>
               <div>Confirm payment</div>
               <div>About us</div>
               <div>Contact us</div>
@@ -33,7 +51,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container bg-slate-700 pt-20">
+      <div className="container bg-slate-700 pt-[135px] mt-6">
         <div className="bg-red-400 flex flex-row max-h-[450px]">
           <ScrollableMenu />
           <div className="flex-auto">Hello</div>
@@ -75,47 +93,47 @@ export default function Home() {
           <div>Payment method</div>
         </div>
 
-        <div className="flex gap-4">
-          <div className="flex flex-col">
-            products
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
+        <div className="flex gap-4 p-2">
+          <div className="flex flex-col m-2 gap-2">
+            <div className="mb-10">Products</div>
+            <div>promotion</div>
+            <div>product reviews</div>
+            <div>gaming gear</div>
+            <div>IT/accessories</div>
+            <div>prepaid card</div>
+            <div>brands product</div>
+            <div>all products</div>
           </div>
-          <div className="flex flex-col">
-            help
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
+          <div className="flex flex-col m-2 gap-2">
+            <div className="mb-10">Help</div>
+            <div>How to sign up</div>
+            <div>Confirm payment</div>
+            <div>How to purchase</div>
+            <div>Pay Method</div>
+            <div>Delivery Method</div>
+            <div>Insurance Policy</div>
+            <div>Insurance duration</div>
+            <div>Help !</div>
           </div>
-          <div className="flex flex-col">
-            about us
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
+          <div className="flex flex-col m-2 gap-2">
+            <div className="mb-10">About us</div>
+            <div>Home page</div>
+            <div>About us</div>
+            <div>Agreement and Policy</div>
+            <div>Private Policy</div>
+            <div>Youtube Channel</div>
           </div>
-          <div className="flex flex-col">
-            contact us
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+          <div className="flex flex-col m-2 gap-2">
+            <div className="mb-10">Contact us</div>
+            <div>Contact us</div>
+            <div>Facebook</div>
+            <div>Line</div>
           </div>
-          <div className="flex flex-col">
-            member
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+          <div className="flex flex-col m-2 gap-2">
+            <div className="mb-10">Member</div>
+            <div>Sign in</div>
+            <div>Sign up</div>
+            <div>History</div>
           </div>
         </div>
 
