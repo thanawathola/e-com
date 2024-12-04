@@ -5,6 +5,7 @@ import ScrollableMenu from "../components/scroll-menu";
 import SearchBar from "@/components/search-bar";
 import ShoppingCart from "@/components/shopping-cart";
 import UserIcon from "@/components/user-icon";
+import AutoSlideshow from "@/components/auto-slide";
 
 export default function Home() {
   return (
@@ -52,9 +53,10 @@ export default function Home() {
       </div>
 
       <div className="container bg-slate-700 pt-[135px] mt-6">
-        <div className="bg-red-400 flex flex-row max-h-[450px]">
+        <div className="bg-red-400 grid grid-cols-10 max-h-[450px] overflow-hidden">
           <ScrollableMenu />
-          <div className="flex-auto">Hello</div>
+
+          <AutoSlideshow />
         </div>
 
         <div>
