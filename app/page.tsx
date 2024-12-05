@@ -53,10 +53,13 @@ export default function Home() {
       </div>
 
       <div className="container bg-slate-700 pt-[135px] mt-6">
-        <div className="bg-red-400 grid grid-cols-10 max-h-[450px] overflow-hidden">
-          <ScrollableMenu />
-
-          <AutoSlideshow />
+        <div className="bg-red-400 grid grid-cols-8 max-h-[450px] overflow-hidden">
+          <div className="col-span-2">
+            <ScrollableMenu />
+          </div>
+          <div className="col-span-6">
+            <AutoSlideshow />
+          </div>
         </div>
 
         <div>

@@ -4,13 +4,13 @@ import Image from "next/image";
 const images = [
   { src: "/images/repair1.jpg", width: 800, height: 600 },
   { src: "/images/speaker.jpg", width: 800, height: 600 },
-  { src: "/images/repair3.jpg", width: 800, height: 600 },
+  { src: "/images/ear-cup.jpg", width: 800, height: 600 },
 ];
 
 const AutoSlideshow: React.FC = () => {
   return (
-    <div className="col-span-8 auto-slide">
-      <Carousel autoplay className="">
+    <div className="auto-slide">
+      <Carousel autoplay>
         {images.map((image, index) => (
           <div
             key={index}
