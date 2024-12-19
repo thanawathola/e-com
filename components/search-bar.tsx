@@ -11,7 +11,7 @@ const SearchBar = () => {
     };
 
     return (
-        <div className="flex w-full rounded-full overflow-hidden border-2 border-blue-700">
+        <div className="flex w-full rounded-full overflow-hidden border-2 border-blue-500">
             <input
                 type="text"
                 value={searchTerm}
@@ -21,7 +21,7 @@ const SearchBar = () => {
             />
             <button
                 onClick={handleSearch}
-                className="flex items-center justify-center bg-black text-blue-700 p-2"
+                className="flex items-center justify-center bg-black text-blue-500 p-2"
             >
                 <FaSearch />
             </button>

@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { Carousel } from "antd";
-import Image from "next/image";
+// import Image from "next/image";
 
 const images = [
   { src: "/images/repair1.jpg", width: 800, height: 600 },

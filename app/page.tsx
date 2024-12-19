@@ -28,13 +28,13 @@ export default function Home() {
                 <div className="">
                   <ShoppingCart />
                 </div>
-                <div className="p-2">Shopping cart</div>
+                <div className="p-2 ">Shopping cart</div>
               </div>
               <div className="p-4 m-4 flex gap-4">
-                <div className="">
+                <div className="border-l-2 border-blue-500">
                   <UserIcon />
                 </div>
-                <div className="p-2">My Account</div>
+                <div className="p-2 ">My Account</div>
               </div>
             </div>
 
@@ -63,27 +63,33 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="flex bg-teal-400">
-            <div className="text-black bg-white mx-auto">Promotion</div>
-            <div className="bg-black px-4">See All </div>
+          <div className="flex bg-black items-center">
+            <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
+            <div className=" mx-auto font-serif text-3xl">Promotion</div>
+            <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
+            <div className=" px-4 font-serif text-xl">See All </div>
           </div>
 
           <div>Promotion product x4</div>
         </div>
 
         <div>
-          <div className="flex bg-teal-400">
-            <div className="text-black bg-white mx-auto">Recommended</div>
-            <div className="bg-black px-4">See All </div>
+          <div className="flex bg-black items-center">
+          <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
+            <div className="mx-auto font-serif text-3xl">Recommended</div>
+            <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
+            <div className="px-4 font-serif text-xl">See All </div>
           </div>
 
           <div>Promotion product x9</div>
         </div>
 
         <div>
-          <div className="flex bg-teal-400">
-            <div className="text-black bg-white mx-auto">Best Seller</div>
-            <div className="bg-black px-4">See All </div>
+        <div className="flex bg-black items-center">
+          <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
+            <div className="mx-auto font-serif text-3xl">Best Seller</div>
+            <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
+            <div className="px-4 font-serif text-xl">See All </div>
           </div>
 
           <div>Promotion product x9</div>
