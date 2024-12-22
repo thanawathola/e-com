@@ -10,7 +10,7 @@ import AutoSlideshow from "@/components/auto-slide";
 export default function Home() {
   return (
     <main className="flex min-h-screen justify-center">
-      <div className="container fixed h-[80px]">
+      <div className="container fixed h-[80px] header">
         <div className="container bg-black">
           <div className="flex flex-col w-full">
             <div className="grid grid-cols-4 gap-4">
@@ -63,36 +63,130 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="flex bg-black items-center">
+          <div className="flex bg-black items-center m-4">
             <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
             <div className=" mx-auto font-serif text-3xl">Promotion</div>
             <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
             <div className=" px-4 font-serif text-xl">See All </div>
           </div>
 
-          <div>Promotion product x4</div>
+          <div className="flex bg-black ">
+            <Image
+              src="/images/prom1.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+            <Image
+              src="/images/prom2.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+            <Image
+              src="/images/prom3.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+            <Image
+              src="/images/prom4.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+          </div>
         </div>
 
         <div>
-          <div className="flex bg-black items-center">
-          <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
+          <div className="flex bg-black items-center m-4">
+            <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
             <div className="mx-auto font-serif text-3xl">Recommended</div>
             <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
             <div className="px-4 font-serif text-xl">See All </div>
           </div>
 
-          <div>Promotion product x9</div>
+          <div className="flex flex-wrap">
+          <Image
+              src="/images/rec1.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+            <Image
+              src="/images/rec2.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+            <Image
+              src="/images/rec3.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+            <Image
+              src="/images/rec4.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+            <Image
+              src="/images/rec5.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+            <Image
+              src="/images/rec6.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+            <Image
+              src="/images/rec7.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+            <Image
+              src="/images/rec8.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+            <Image
+              src="/images/rec9.jpg" // Corrected the path
+              height={200}
+              width={180}
+              alt="Gump Logo" // Update with a meaningful alt text
+              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+            />
+
+          </div>
         </div>
 
         <div>
-        <div className="flex bg-black items-center">
-          <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
+          <div className="flex bg-black items-center m-4">
+            <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
             <div className="mx-auto font-serif text-3xl">Best Seller</div>
             <div className="border rounded border-blue-500 h-2 bg-blue-500 flex-1 mx-2"></div>
             <div className="px-4 font-serif text-xl">See All </div>
           </div>
 
-          <div>Promotion product x9</div>
+          <div className="flex xl-4">Promotion product x9</div>
         </div>
 
         <div>

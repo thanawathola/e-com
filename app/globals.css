@@ -29,3 +29,8 @@ body {
 .gird-banner {
   grid-template-columns: 300px 1fr;
 }
+
+.header {
+  position: fixed;
+  z-index: 10;
+}
