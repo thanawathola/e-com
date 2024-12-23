@@ -6,6 +6,7 @@ import SearchBar from "@/components/search-bar";
 import ShoppingCart from "@/components/shopping-cart";
 import UserIcon from "@/components/user-icon";
 import AutoSlideshow from "@/components/auto-slide";
+import CustomCarousel from "@/components/brand-slide";
 
 export default function Home() {
   return (
@@ -110,71 +111,92 @@ export default function Home() {
             <div className="px-4 font-serif text-xl">See All </div>
           </div>
 
-          <div className="flex flex-wrap">
-          <Image
-              src="/images/rec1.jpg" // Corrected the path
-              height={200}
-              width={180}
-              alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
-            />
-            <Image
-              src="/images/rec2.jpg" // Corrected the path
-              height={200}
-              width={180}
-              alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
-            />
-            <Image
-              src="/images/rec3.jpg" // Corrected the path
-              height={200}
-              width={180}
-              alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
-            />
-            <Image
-              src="/images/rec4.jpg" // Corrected the path
-              height={200}
-              width={180}
-              alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
-            />
-            <Image
-              src="/images/rec5.jpg" // Corrected the path
-              height={200}
-              width={180}
-              alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
-            />
-            <Image
-              src="/images/rec6.jpg" // Corrected the path
-              height={200}
-              width={180}
-              alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
-            />
-            <Image
-              src="/images/rec7.jpg" // Corrected the path
-              height={200}
-              width={180}
-              alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
-            />
-            <Image
-              src="/images/rec8.jpg" // Corrected the path
-              height={200}
-              width={180}
-              alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
-            />
-            <Image
-              src="/images/rec9.jpg" // Corrected the path
-              height={200}
-              width={180}
-              alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
-            />
+          <div className="flex flex-wrap justify-center">
+            <div className=" p-4">
+              <Image
+                src="/images/rec1.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of rec1" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+              <div>Hello</div>
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/rec2.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of rec1" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/rec3.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of rec1" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/rec4.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of rec1" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/rec5.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of rec1" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+          </div>
 
+          <div className=" flex flex-wrap justify-center">
+            <div className=" p-4">
+              <Image
+                src="/images/rec6.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of rec1" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/rec7.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of rec1" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/rec8.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of rec1" // Provide a meaningful description
+                className=" mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/rec9.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of rec1" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
           </div>
         </div>
 
@@ -186,12 +208,114 @@ export default function Home() {
             <div className="px-4 font-serif text-xl">See All </div>
           </div>
 
-          <div className="flex xl-4">Promotion product x9</div>
+          <div className="flex flex-wrap justify-center">
+            <div className=" p-4">
+              <Image
+                src="/images/b1.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of b1" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+              <div>Hello</div>
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/b2.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of b2" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/b3.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of b3" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/b4.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of b4" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/b5.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of b5" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+          </div>
+
+          <div className=" flex flex-wrap justify-center">
+            <div className=" p-4">
+              <Image
+                src="/images/b6.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of b6" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/b7.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of b7" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/b8.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of b8" // Provide a meaningful description
+                className=" mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/b9.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of b9" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+            <div className=" p-4">
+              <Image
+                src="/images/b10.jpg" // Path to your image file
+                height={200}
+                width={180}
+                alt="Description of b10" // Provide a meaningful description
+                className="mx-auto w-full" // Center the image within the div
+              />
+            </div>
+          </div>
         </div>
 
         <div>
-          <div>Product slide</div>
-          <div>See All Brand</div>
+          <div className="border rounded border-gray-500 h-4 bg-gray-500 flex-1 m-2"></div>
+          <div className="">
+            <CustomCarousel/>
+          </div>
+          <div className="flex">
+          <div className="border rounded border-gray-500 h-4 bg-gray-500 flex-1 m-2"></div>
+          <div className="font-serif text-xl text-green-400">See All Brand</div>
+          <div className="border rounded border-gray-500 h-4 bg-gray-500 flex-1 m-2"></div>
+          </div>
         </div>
 
         <div>
