@@ -383,7 +383,7 @@ export default function Home() {
             <div>History</div>
           </div>
         </div>
-        <div className="flex justify-between pb-[60px] bg-gray-800  border-t-2 border-blue-500">
+        <div className="flex justify-between pb-[100px] bg-gray-800  border-t-2 border-blue-500">
           <div className="flex flex-col">
             <div>
               <Image
@@ -407,17 +407,26 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-row gap-2 px-4 m-2">
-            <div className="">
-             Facebook
-            </div>
+            <div className="">Facebook</div>
             <div>Line</div>
             <div>Youtube</div>
           </div>
         </div>
       </div>
 
-      <div className="container fixed bottom-0 w-full bg-gray-300 p-4 h-[60px]">
-        <div className="text-center text-black">Footer Content Here</div>
+      <div className="container fixed bottom-0 w-full bg-slate-900 p-4 h-[95px] ">
+        <div className="flex">
+          <div className="text-center text-white">
+          This website uses cookies to provide you with a better website
+          experience. By using this website, you agree to our use of cookies in
+          accordance with our Cookie Policy.
+        </div>
+        <div className="text-orange-500"> Read more here.</div>
+        </div>
+        
+        <div className="justify-center text-center flex">
+          <div className="border bg-black m-2 p-2 border-white">Accept Cookies</div>
+        </div>
       </div>
     </main>
   );
