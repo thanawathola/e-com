@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 import ScrollableMenu from "../components/scroll-menu";
 import SearchBar from "@/components/search-bar";
@@ -7,6 +7,7 @@ import ShoppingCart from "@/components/shopping-cart";
 import UserIcon from "@/components/user-icon";
 import AutoSlideshow from "@/components/auto-slide";
 import CustomCarousel from "@/components/brand-slide";
+import { Image } from 'antd';
 
 export default function Home() {
   return (
@@ -71,34 +72,34 @@ export default function Home() {
             <div className=" px-4 font-serif text-xl">See All </div>
           </div>
 
-          <div className="flex bg-black ">
+          <div className="grid grid-cols-2 bg-black md:grid-cols-3 lg:grid-cols-4 gap-2 m-2">
             <Image
               src="/images/prom1.jpg" // Corrected the path
-              height={200}
-              width={180}
+              // height={200}
+              // width={180}
               alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+              // className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
             />
             <Image
               src="/images/prom2.jpg" // Corrected the path
-              height={200}
-              width={180}
+              // height={200}
+              // width={180}
               alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+              // className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
             />
             <Image
               src="/images/prom3.jpg" // Corrected the path
-              height={200}
-              width={180}
+              // height={200}
+              // width={180}
               alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+              // className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
             />
             <Image
               src="/images/prom4.jpg" // Corrected the path
-              height={200}
-              width={180}
+              // height={200}
+              // width={180}
               alt="Gump Logo" // Update with a meaningful alt text
-              className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
+              // className="m-2 w-1/4 sm:w-1/2 md:w-1/3 lg:w-1/4" // TailwindCSS class for margin
             />
           </div>
         </div>
@@ -111,90 +112,90 @@ export default function Home() {
             <div className="px-4 font-serif text-xl">See All </div>
           </div>
 
-          <div className="flex flex-wrap justify-center">
-            <div className=" p-4">
+          <div className="grid grid-cols-2 bg-black md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 m-2 justify-center">
+            <div className=" text-center">
               <Image
                 src="/images/rec1.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of rec1" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
               <div>Hello</div>
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/rec2.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of rec1" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/rec3.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of rec1" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/rec4.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of rec1" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/rec5.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of rec1" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
           </div>
 
-          <div className=" flex flex-wrap justify-center">
-            <div className=" p-4">
+          <div className="grid grid-cols-2 bg-black md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 m-2 ">
+            <div className="">
               <Image
                 src="/images/rec6.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of rec1" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="justify-center" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/rec7.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of rec1" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className=" justify-center" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/rec8.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of rec1" // Provide a meaningful description
-                className=" mx-auto w-full" // Center the image within the div
+                // className="justify-center" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/rec9.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of rec1" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="justify-center" // Center the image within the div
               />
             </div>
           </div>
@@ -208,99 +209,99 @@ export default function Home() {
             <div className="px-4 font-serif text-xl">See All </div>
           </div>
 
-          <div className="flex flex-wrap justify-center">
-            <div className=" p-4">
+          <div className="grid grid-cols-2 bg-black md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 m-2  justify-center">
+            <div className="">
               <Image
                 src="/images/b1.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of b1" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
               <div>Hello</div>
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/b2.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of b2" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/b3.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of b3" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/b4.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of b4" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/b5.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of b5" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
           </div>
 
-          <div className=" flex flex-wrap justify-center">
-            <div className=" p-4">
+          <div className="grid grid-cols-2 bg-black md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 m-2  justify-center">
+            <div className="">
               <Image
                 src="/images/b6.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of b6" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/b7.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of b7" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/b8.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of b8" // Provide a meaningful description
-                className=" mx-auto w-full" // Center the image within the div
+                // className=" mx-auto w-full" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/b9.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of b9" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
-            <div className=" p-4">
+            <div className="">
               <Image
                 src="/images/b10.jpg" // Path to your image file
-                height={200}
-                width={180}
+                // height={200}
+                // width={180}
                 alt="Description of b10" // Provide a meaningful description
-                className="mx-auto w-full" // Center the image within the div
+                // className="mx-auto w-full" // Center the image within the div
               />
             </div>
           </div>
