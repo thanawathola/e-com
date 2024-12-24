@@ -7,7 +7,7 @@ import ShoppingCart from "@/components/shopping-cart";
 import UserIcon from "@/components/user-icon";
 import AutoSlideshow from "@/components/auto-slide";
 import CustomCarousel from "@/components/brand-slide";
-import { Image } from 'antd';
+import { Image } from "antd";
 
 export default function Home() {
   return (
@@ -18,10 +18,10 @@ export default function Home() {
             <div className="grid grid-cols-4 gap-4">
               <Image
                 src="/images/gump.png" // Corrected the path
-                height={200}
+                // height={200}
                 width={180}
                 alt="Gump Logo" // Update with a meaningful alt text
-                className="m-4" // TailwindCSS class for margin
+                // className="m-4" // TailwindCSS class for margin
               />
               <div className="p-4 m-4">
                 <SearchBar />
@@ -112,8 +112,8 @@ export default function Home() {
             <div className="px-4 font-serif text-xl">See All </div>
           </div>
 
-          <div className="grid grid-cols-2 bg-black md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 m-2 justify-center">
-            <div className=" text-center">
+          <div className="grid grid-cols-2 bg-black md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 m-2 ">
+            <div className="">
               <Image
                 src="/images/rec1.jpg" // Path to your image file
                 // height={200}
@@ -121,7 +121,7 @@ export default function Home() {
                 alt="Description of rec1" // Provide a meaningful description
                 // className="mx-auto w-full" // Center the image within the div
               />
-              <div>Hello</div>
+              <div className="text-center">Hello</div>
             </div>
             <div className="">
               <Image
@@ -161,7 +161,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 bg-black md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 m-2 ">
+          <div className="grid grid-cols-2 bg-black md:grid-cols-3 lg:grid-cols-4 m-2 ">
             <div className="">
               <Image
                 src="/images/rec6.jpg" // Path to your image file
@@ -310,22 +310,39 @@ export default function Home() {
         <div>
           <div className="border rounded border-gray-500 h-4 bg-gray-500 flex-1 m-2"></div>
           <div className="">
-            <CustomCarousel/>
+            <CustomCarousel />
           </div>
           <div className="flex">
-          <div className="border rounded border-gray-500 h-4 bg-gray-500 flex-1 m-2"></div>
-          <div className="font-serif text-xl text-green-400">See All Brand</div>
-          <div className="border rounded border-gray-500 h-4 bg-gray-500 flex-1 m-2"></div>
+            <div className="border rounded border-gray-500 h-4 bg-gray-500 flex-1 m-2"></div>
+            <div className="font-serif text-xl text-green-400">
+              See All Brand
+            </div>
+            <div className="border rounded border-gray-500 h-4 bg-gray-500 flex-1 m-2"></div>
           </div>
         </div>
 
         <div>
-          <div>Payment method</div>
+          <div className="text-center bg-white pt-2">
+            <Image
+              src="/images/pm1.png" // Path to your image file
+              // height={200}
+              // width={180}
+              alt="Description of pm1" // Provide a meaningful description
+              // className="mx-auto w-full" // Center the image within the div
+            />
+            {/* <Image
+            src="/images/pm1.jpg"
+            alt="Description of pm1"
+            /> */}
+          </div>
+          <div className="text-center bg-white pt-2">
+            <Image src="/images/pm2.png" alt="Description of pm2" />
+          </div>
         </div>
 
-        <div className="flex gap-4 p-2">
-          <div className="flex flex-col m-2 gap-2">
-            <div className="mb-10">Products</div>
+        <div className="grid grid-cols-5 gap-4 p-2 font-serif text-md bg-gray-800">
+          <div className="flex flex-col m-2 gap-2 ">
+            <div className="mb-10 text-blue-500 text-2xl">Products</div>
             <div>promotion</div>
             <div>product reviews</div>
             <div>gaming gear</div>
@@ -335,7 +352,7 @@ export default function Home() {
             <div>all products</div>
           </div>
           <div className="flex flex-col m-2 gap-2">
-            <div className="mb-10">Help</div>
+            <div className="mb-10 text-blue-500 text-2xl">Help</div>
             <div>How to sign up</div>
             <div>Confirm payment</div>
             <div>How to purchase</div>
@@ -346,7 +363,7 @@ export default function Home() {
             <div>Help !</div>
           </div>
           <div className="flex flex-col m-2 gap-2">
-            <div className="mb-10">About us</div>
+            <div className="mb-10 text-blue-500 text-2xl">About us</div>
             <div>Home page</div>
             <div>About us</div>
             <div>Agreement and Policy</div>
@@ -354,34 +371,52 @@ export default function Home() {
             <div>Youtube Channel</div>
           </div>
           <div className="flex flex-col m-2 gap-2">
-            <div className="mb-10">Contact us</div>
+            <div className="mb-10 text-blue-500 text-2xl">Contact us</div>
             <div>Contact us</div>
             <div>Facebook</div>
             <div>Line</div>
           </div>
           <div className="flex flex-col m-2 gap-2">
-            <div className="mb-10">Member</div>
+            <div className="mb-10 text-blue-500 text-2xl">Member</div>
             <div>Sign in</div>
             <div>Sign up</div>
             <div>History</div>
           </div>
         </div>
-
-        <div className="flex gap-4">
+        <div className="flex justify-between pb-[60px] bg-gray-800  border-t-2 border-blue-500">
           <div className="flex flex-col">
-            Company info
-            <div>1</div>
+            <div>
+              <Image
+                src="/images/pm1.png" // Path to your image file
+                // height={200}
+                // width={180}
+                alt="Description of pm1" // Provide a meaningful description
+                // className="flex-shrink-0 flex-grow-0 basis-0" // Center the image within the div
+              />
+            </div>
+
+            <div className="flex gap-2">
+              <div className="">
+                Right reserve © Immense Corporation Co., Ltd. Email :
+              </div>
+              <div className="text-blue-500">support@gump.in.th</div>
+              <div className=""> Tel: </div>
+              <div className="text-blue-500">081-846-0558</div>
+              <div className=""> Fax: </div>
+              <div className="text-blue-500">02-953-5599</div>
+            </div>
           </div>
-          <div className="flex flex-row">
-            Social media icon
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+          <div className="flex flex-row gap-2 px-4 m-2">
+            <div className="">
+             Facebook
+            </div>
+            <div>Line</div>
+            <div>Youtube</div>
           </div>
         </div>
       </div>
 
-      <div className="container fixed bottom-0 w-full bg-gray-300 p-4">
+      <div className="container fixed bottom-0 w-full bg-gray-300 p-4 h-[60px]">
         <div className="text-center text-black">Footer Content Here</div>
       </div>
     </main>
