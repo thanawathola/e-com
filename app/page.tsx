@@ -340,7 +340,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-5 gap-4 p-2 font-serif text-md bg-gray-800">
+        <div className="grid grid-cols-5 gap-4 p-2 font-serif text-md bg-darkGray">
           <div className="flex flex-col m-2 gap-2 ">
             <div className="mb-10 text-blue-500 text-2xl">Products</div>
             <div>promotion</div>
@@ -383,8 +383,8 @@ export default function Home() {
             <div>History</div>
           </div>
         </div>
-        <div className="flex justify-between pb-[100px] bg-gray-800  border-t-2 border-blue-500">
-          <div className="flex flex-col">
+        <div className="flex justify-between pb-[100px] bg-darkGray  border-t-2 border-blue-500">
+          <div className="flex flex-col ">
             <div>
               <Image
                 src="/images/pm1.png" // Path to your image file
@@ -407,9 +407,27 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-row gap-2 px-4 m-2">
-            <div className="">Facebook</div>
-            <div>Line</div>
-            <div>Youtube</div>
+            <div className="">
+              <img 
+              src="/images/fb.png"
+              alt="fb icon"
+              width={35}
+              />
+            </div>
+            <div>
+            <img 
+              src="/images/line.png"
+              alt="fb icon"
+              width={35}
+              />
+            </div>
+            <div>
+            <img 
+              src="/images/yt.png"
+              alt="fb icon"
+              width={35}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -417,15 +435,17 @@ export default function Home() {
       <div className="container fixed bottom-0 w-full bg-slate-900 p-4 h-[95px] ">
         <div className="flex">
           <div className="text-center text-white">
-          This website uses cookies to provide you with a better website
-          experience. By using this website, you agree to our use of cookies in
-          accordance with our Cookie Policy.
+            This website uses cookies to provide you with a better website
+            experience. By using this website, you agree to our use of cookies
+            in accordance with our Cookie Policy.
+          </div>
+          <div className="text-orange-500"> Read more here.</div>
         </div>
-        <div className="text-orange-500"> Read more here.</div>
-        </div>
-        
+
         <div className="justify-center text-center flex">
-          <div className="border bg-black m-2 p-2 border-white">Accept Cookies</div>
+          <div className="border bg-black m-2 p-2 border-white">
+            Accept Cookies
+          </div>
         </div>
       </div>
     </main>
