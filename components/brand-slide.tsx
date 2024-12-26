@@ -58,7 +58,7 @@ const images = [
 const CustomCarousel: React.FC = () => {
   return (
     <div className="relative px-14">
-      <Carousel dots={false} autoplay slidesToShow={6} arrows={true}>
+      <Carousel dots={false} autoplay slidesToShow={4} arrows={true}>
         {images.map((image, index) => (
           <div key={index} className="carousel-slide">
             <img
