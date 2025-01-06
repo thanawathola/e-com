@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 // import Image from "next/image";
 import React from "react";
@@ -15,15 +16,17 @@ export default function Home() {
       <div className="container fixed h-[80px] header">
         <div className="container bg-black">
           <div className="flex flex-col w-full">
-            <div className="grid grid-cols-4 gap-4">
-              <Image
-                src="/images/gump.png" // Corrected the path
-                // height={200}
-                width={180}
-                alt="Gump Logo" // Update with a meaningful alt text
-                // className="m-4" // TailwindCSS class for margin
-              />
-              <div className="p-4 m-4">
+            <div className="flex">
+              <div className="mr-60">
+                <Image
+                  src="/images/gump.png" // Corrected the path
+                  // height={200}
+                  width={200}
+                  alt="Gump Logo" // Update with a meaningful alt text
+                  // className="m-4" // TailwindCSS class for margin
+                />
+              </div>
+              <div className="p-4 m-4 w-[600px]">
                 <SearchBar />
               </div>
               <div className="p-4 m-4 flex gap-4">
@@ -408,25 +411,13 @@ export default function Home() {
           </div>
           <div className="flex flex-row gap-2 px-4 m-2">
             <div className="">
-              <img 
-              src="/images/fb.png"
-              alt="fb icon"
-              width={35}
-              />
+              <img src="/images/fb.png" alt="fb icon" width={35} />
             </div>
             <div>
-            <img 
-              src="/images/line.png"
-              alt="fb icon"
-              width={35}
-              />
+              <img src="/images/line.png" alt="fb icon" width={35} />
             </div>
             <div>
-            <img 
-              src="/images/yt.png"
-              alt="fb icon"
-              width={35}
-              />
+              <img src="/images/yt.png" alt="fb icon" width={35} />
             </div>
           </div>
         </div>
