@@ -11,7 +11,7 @@ const SearchBar = () => {
     };
 
     return (
-        <div className="flex w-full rounded-full overflow-hidden border-2 border-blue-500">
+        <div className="flex w-full rounded-full overflow-hidden border-2 border-blue-500 ">
             <input
                 type="text"
                 value={searchTerm}

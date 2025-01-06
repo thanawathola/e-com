@@ -1,11 +1,13 @@
 import React from "react";
 import ChevronRight from "./r-chevron";
 
+
+
 const ScrollableMenu: React.FC = () => {
   return (
-    <div className="overflow-y-scroll border border-gray-300 p-4 bg-gray-900 text-white h-[450px]">
+    <div className="overflow-y-scroll border border-gray-300 p-4 bg-darkGray text-white h-[450px] scrollable-menu">
       <div className="py-2 px-3 m-2 border-b border-gray-600 flex items-center gap-2">
-        <div className="border rounded-full bg-white">
+        <div className="">
           <ChevronRight />
         </div>
         <div>Gaming Gear</div>

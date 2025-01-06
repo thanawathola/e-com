@@ -33,9 +33,8 @@
 
 // export default CustomCarousel;
 
-import React from "react";
 import { Carousel } from "antd";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import React from "react";
 
 const images = [
   { src: "/images/p1.jpg" },
@@ -57,28 +56,43 @@ const images = [
 
 const CustomCarousel: React.FC = () => {
   return (
-    <div className="relative px-14">
-      <Carousel dots={false} autoplay slidesToShow={4} arrows={true}>
+    <div className="auto-slide  full-picture2">
+      <Carousel autoplay slidesToShow={4}>
         {images.map((image, index) => (
-          <div key={index} className="carousel-slide">
-            <img
-              className="w-full h-auto object-cover"
-              src={image.src}
-              alt={`Slide ${index}`}
-            />
+          <div
+            key={index}
+            className={`transition-opacity duration-1000 ease-in-out `}
+          >
+            <div className="">
+              <img src={image.src} alt={`Slide ${index}`} />
+            </div>
+            {/* <h1>Hello</h1> */}
+            {/* <Image
+                // fill
+                src={image.src}
+                alt={`Slide ${index}`}
+                width={image.width}
+                height={image.height}
+                className="w-full h-full object-cover"
+              /> */}
           </div>
         ))}
       </Carousel>
-
-      {/* Custom Navigation */}
-      <button className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white border border-black p-2 rounded-full shadow-md text-black text-4xl">
-        <LeftOutlined />
-      </button>
-      
-      <button className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white border border-black p-2 rounded-full shadow-md text-black text-4xl">
-        <RightOutlined />
-      </button>
     </div>
+    // <div className="auto-slide">
+    //   <Carousel autoplay slidesToShow={4} >
+    //     {images.map((image, index) => (
+    //       <div key={index} className="">
+    //         <img
+
+    //           src={image.src}
+    //           alt={`Slide ${index}`}
+    //         />
+    //       </div>
+    //     ))}
+    //   </Carousel>
+
+    // </div>
   );
 };
 

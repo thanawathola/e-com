@@ -307,9 +307,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
+        <div className="bg-black">
           <div className="border rounded border-gray-500 h-4 bg-gray-500 flex-1 m-2"></div>
-          <div className="">
+          <div className="bg-black ">
             <CustomCarousel />
           </div>
           <div className="flex">
